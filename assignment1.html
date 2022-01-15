@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Survey Form</title>
+        <style>
+            body {
+                background-image: url(/background_image.jpeg);
+                width: 100%;
+                background-repeat: no-repeat;
+                display: inline-block;
+            }
+            .container1 {
+                background-color: rgba(0, 0, 0, 0.3);
+                width: 85%;
+                height: 95%;
+                align-content: center;
+                margin: 0 auto;
+            }
+            
+            .header { 
+                position:absolute;
+                width: 85%;
+                color: white;
+                align-content: center;
+                display: inline-block;
+            }
+            h1 {
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 60px;
+                font-weight: lighter;
+                color: white;
+                top: 30px;
+                width: 100%;
+                min-height: 30px;
+                display: inline-block;
+                text-align: center;
+                margin: 0 auto;
+            }
+            h4 {
+                font-family: Arial, Helvetica, sans-serif;
+                text-align: center;
+                width: 100%;
+                font-size: 20px;
+                padding-left: 10px;
+                padding-right: 10px;
+                padding-bottom: 20px;
+            }
+            .survey-form {
+                font-family: Arial, Helvetica, sans-serif;
+                margin: 0 auto;
+                width: 25%;
+                height: 75%;
+                background-color: rgba(0, 0, 0, 0.9);
+                color: white;
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-bottom: 30px;
+                padding-top: 20px;
+                min-width: 275px;
+            }
+            #name,
+            #age,
+            #email,
+            textarea {
+                padding: 10px;
+                width: 85%;
+            }
+            label {
+                margin-bottom: 1em;
+            }
+            .buttons {
+                color: white;
+                background-color: red;
+                height:40px;
+                width: 100px;
+                border: none;
+                border-radius: 30px;
+                margin-left: 90px;
+            }
+            select {
+                padding: 10px;
+                width: 85%;
+            }
+        </style>
+        </head>
+        <body>
+            <div class="container1">
+
+                <header class="header">
+                    <h1><span style="color:white">NET</span><span style="color: red">FLIX</span></h1>
+                    <h4>Thank you for signing up to Netflix. Tell me more about yourself</h4>
+                </header>
+                <br><br><br><br><br><br><br><br>
+                <div class="survey-form">
+                    <form>
+                        <div class="name">
+                            <label for="name">Name</label>
+                            <br><br>
+                            <input type="text" id="name" class="name" name="about" placeholder="enter your name" required>
+                        </div>
+                        <br>
+                        <div class="age">
+                            <label for="age">Age</label>
+                            <br><br>
+                            <input type="text" id="age" class="age" placeholder="age" required>
+                        </div>
+                        <br>
+                        <div class="email">
+                            <label for="email">Email</label>
+                            <br><br>
+                            <input type="email" id="email" placeholder="enter your Email">
+                        </div>
+                        <br>
+                        <br>
+                        <div><label for="job-type">Content Type</label></div><br>
+                        <select name="" id="job-type">
+                            <option value="full-time">Series</option>
+                            <option value="part-time">Movies</option>
+                        </select>
+                        <br><br>
+                        <div class="checkbox">
+                            <div>
+                                <label for="">Movie Type</label>
+                            </div><br>
+                            <input id="comedy" type="checkbox" value="COMEDY" name="genre1">
+                            <label for="comedy">Comedy</label>
+                            <br>
+                            <input id="action" type="checkbox" value="ACTION" name="genre2">
+                            <label for="action">Action</label>
+                            <br>
+                            <input id="romance" type="checkbox" value="ROMANCE" name="genre3">
+                            <label for="romance">Romance</label>                
+                        </div>
+                        <br>
+                        <br>
+                        <div class="radio">
+                            <div>
+                                <label>Gender</label>
+                                
+                            </div>
+                            <br>
+                
+                            
+                            <input id="male" type="radio" value="male" name="gender">
+                            <label for="male">Male</label>
+                            <br>                           
+                            <input id="female" type="radio" value="female" name="gender">
+                            <label for="female">Female</label>
+                            <br>                            
+                            <input id="female" type="radio" value="female" name="gender">
+                            <label for="female">Other</label>
+                        </div>
+                        <br>
+                        <div>
+                            <label for="comments">Feedback</label>
+                        </div>
+                        <div class="textarea">
+                           <textarea name="" id="comments" cols="30" rows="5" placeholder="any comment"></textarea>               
+                        </div>
+                        <br>
+                        <div>
+                            <input class="buttons" type="submit">
+                        </div>
+
+                    </form>
+
+
+                </div>
+            </div>
+
+        </body>
+        </html>
